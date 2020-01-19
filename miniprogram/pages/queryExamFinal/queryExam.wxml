@@ -1,0 +1,39 @@
+<!--pages/databaseGuide/databaseGuide.wxml-->
+<view class="container">
+
+  <view class="guide" wx:if="{{step === 1}}">
+    <text class="headline">开始抽签</text>
+    <text class="p">1. 请准确输入姓名</text>
+    <text class="p">2. 点击抽签按钮</text>
+  </view>
+
+  <view class="myinput">
+    <text class="shape">姓名: </text>
+    <input class="weui-input shape" placeholder="输入考生姓名"value='{{name}}' bindinput='bindStudentName' />
+  </view>
+
+  <view class="myinput">
+    <div class="nav" style="text-align:center">
+      <div style="display:block;margin:26rpx">   
+        <button class="next" wx:if="{{name!==null && name}}" size="mini" type="default" bindtap="onQuery">抽签或查询 </button>
+      </div>
+    </div>
+  </view>
+
+<view id="panel" class="guide" wx:if="{{showResult}}">
+  <view class="flex-cell flex-row">
+    <text class="flex-cell flex-row">姓名</text>
+    <text class="flex-cell flex-row">{{result.name}}</text>
+  </view>
+  <view class="flex-row flex-cell">
+    <text class="flex-cell flex-row">复赛序号</text>
+    <text class="flex-cell flex-row">{{result.order}}</text>
+  </view>
+  <view class="flex-row flex-cell">
+    <text class="flex-cell flex-row">组别</text>
+    <text class="flex-cell flex-row">{{result.group}}</text>
+  </view>
+
+</view>
+
+</view>

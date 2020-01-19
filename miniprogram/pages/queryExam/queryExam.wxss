@@ -1,0 +1,69 @@
+/* pages/databaseGuide/databaseGuide.wxss */
+
+@import "../../style/guide.wxss";
+
+.guide {
+  margin-top: 50rpx;
+  display: flex;
+  align-content: space-between;
+}
+
+.myinput {
+  /* float:left; */
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+  justify-content: center;
+  line-height: 36rpx;
+  margin-top: 20rpx;
+
+}
+
+.shape {
+  width: 100%;
+  line-height: 36rpx;
+}
+
+.output {
+  margin-top: 50rpx;
+  display: flex;
+  /* flex-direction: row; */
+  align-content: space-between;
+}
+
+#panel{
+  /* margin-top: 10rpx;   */
+  /* height: 50rpx; */
+  background:#fff;
+}
+
+#panel text{
+  line-height: 36rpx;
+  
+}
+
+.flex-row{
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  /* border-right: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+  border-top: 1rpx solid #ddd;
+  border-left: 1rpx solid #ddd; */
+
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.flex-cell{
+  flex: 1;
+}

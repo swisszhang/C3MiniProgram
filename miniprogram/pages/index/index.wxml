@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 钢琴考试抽签 -->
+  <view class="uploader">
+    <!-- <navigator url="../queryExam/queryExam" open-type="navigate" class="uploader-text">
+      <text>钢琴考试抽签</text>
+    </navigator> -->
+  </view>
+
+  <view class="uploader">
+    <!-- C3复选赛抽签 -->
+    <navigator url="../queryExamFinal/queryExam" open-type="navigate" class="uploader-text">
+      <text>C3复选赛抽签</text>
+    </navigator>
+
+  </view>
+</view>
